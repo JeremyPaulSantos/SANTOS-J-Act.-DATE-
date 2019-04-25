@@ -1,0 +1,49 @@
+// Create a program that woll accept integer values for month, day, and year and then output the "long version" of the specified date.
+#include <iostream>
+#include <conio.h>
+ using namespace std;
+ 
+ int main()
+ {
+ 	int day, year, month;
+ 	cout << "Enter Specified date by Entering:" << endl;
+ 	cout << "Preferred Month (1-12)" << endl;
+	cin >> month;
+ 	cout << "Preferred Day" << endl;
+ 	cin >> day;
+ 	cout << "Preferred Year" << endl;
+ 	cin >> year;
+ 	if (month==1 && day<=31)
+ 	cout << "Your Preferred Date is: \nJanuary " << day << ", " << year << endl;
+ 	else if (month==2 && day<=28)
+ 	cout << "Your Preferred Date is: \nFebuary " << day << ", " << year << endl;
+ 	else if (month==3 && day<=31)
+ 	cout << "Your Preferred Date is: \nMarch " << day << ", " << year << endl;
+ 	else if (month==4 && day<=30)
+ 	cout << "Your Preferred Date is: \nApril " << day << ", " << year << endl;
+ 	else if(month==5 && day<=31)
+ 	cout << "Your Preferred Date is: \nMay " << day << ", " << year << endl;
+ 	else if (month==6 && day<=30)
+ 	cout << "Your Preferred Date is: \nJune " << day << ", " << year << endl;
+ 	else if (month==7 && day<=31)
+ 	cout << "Your Preferred Date is: \nJuly " << day << ", " << year << endl;
+ 	else if(month==8 && day<=31)
+ 	cout << "Your Preferred Date is: \nAugust " << day << ", " << year << endl;
+ 	else if(month==9 && day<=30)
+ 	cout << "Your Preferred Date is: \nSeptember " << day << ", " << year << endl;
+ 	else if(month==10 && day<=31)
+ 	cout << "Your Preferred Date is: \nOctober " << day << ", " << year << endl;
+ 	else if(month==11 && day<=30)
+ 	cout << "Your Preferred Date is: \nNovember " << day << ", " << year << endl;
+ 	else if (month==12 && day<=31)
+ 	cout << "Your Preferred Date is: \nDecember " << day << ", " << year << endl;
+ 	else 
+ 	cout << "Invalid Date! \nTry again" << endl;
+ 	
+ 	
+
+ 	_getch();	
+
+ 	return 0;
+ }
+ 
